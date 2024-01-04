@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EbookJet</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>EbookJet</h1>
+    </header>
+    <main>
+        <form id="uploadForm">
+            <label for="ebookFile">Upload Ebook:</label>
+            <input type="file" id="ebookFile" accept=".pdf, .epub" required>
+            <button type="button" onclick="uploadEbook()">Upload</button>
+        </form>
+
+        <h2>Available Ebooks:</h2>
+        <ul id="ebookList"></ul>
+    </main>
+    <script src="/scripts.js"></script>
+</body>
+</html>
